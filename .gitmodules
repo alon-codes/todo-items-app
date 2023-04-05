@@ -1,3 +1,6 @@
 [submodule "todo-items-nextjs-app"]
 	path = todo-items-nextjs-app
 	url = https://github.com/alon-codes/todo-items-nextjs-app.git
+[submodule "todo-items-django-server"]
+	path = todo-items-django-server
+	url = https://github.com/alon-codes/todo-items-django-server.git
