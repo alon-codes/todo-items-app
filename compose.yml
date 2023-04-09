@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nextjs-app:
+    build:
+      context: ./todo-items-nextjs-app
+      dockerfile: Dockerfile
+      args:
+        GIT_REPOSITORY: https://github.com/alon-codes/todo-items-nextjs-app.git
+        GIT_REF: master
+    ports:
+      - "3000:3000"
+  django-server:
+    build:
+      context: ./todo-items-django-server
+      dockerfile: Dockerfile
+      args:
+        GIT_REPOSITORY: https://github.com/alon-codes/todo-items-django-server.git
+        GIT_REF: master
+    ports:
+      - "8000:8000"
