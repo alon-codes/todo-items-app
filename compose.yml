@@ -9,6 +9,7 @@ services:
         GIT_REF: master
     ports:
       - "3000:3000"
+    restart: always
   django-server:
     build:
       context: ./todo-items-django-server
